@@ -1,0 +1,208 @@
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background-color: transparent;
+  /* border-bottom: 1px solid #ccc; */
+  background-color: black;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: grey;
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 30px;
+  height: 30px;
+}
+
+  .schedule-container h1{
+    text-align: center;
+  }
+
+
+
+/* Autism theme colors */
+:root {
+    --autism-blue: #87CEEB;
+    --autism-red: #FFC080;
+    --autism-yellow: #F7DC6F;
+    --autism-green: #32CD32;
+    --background-color: #F0F0F0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    /* Add a subtle gradient background */
+    background-image: linear-gradient(to bottom, #F0F0F0, #E5E5E5);
+  }
+  
+  h1, h2 {
+    color: var(--autism-blue);
+    /* Add a subtle shadow effect */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .schedule-container, .timetable-container {
+    background-color: #FFFFFF;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #CCCCCC;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Add a subtle animation effect */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .schedule-container:hover, .timetable-container:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.01);
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    /* Add a subtle border effect */
+    border: 1px solid #CCCCCC;
+    border-radius: 10px;
+  }
+  
+  th, td {
+    border: 1px solid #CCCCCC;
+    padding: 10px;
+    text-align: left;
+    /* Add a subtle gradient effect */
+    background-image: linear-gradient(to bottom, #FFFFFF, #F7F7F7);
+  }
+  
+  th {
+    background-color: var(--autism-yellow);
+    color: #FFFFFF;
+    /* Add a subtle shadow effect */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  td {
+    background-color: #FFFFFF;
+  }
+  
+  td:hover {
+    background-color: var(--autism-green);
+    cursor: pointer;
+    /* Add a subtle animation effect */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Autism puzzle piece icon */
+  .autism-icon {
+    width: 50px;
+    height: 50px;
+    background-image: url('autism-icon.jpeg');
+    background-size: 50px 50px;
+    display: inline-block;
+    margin: 10px;
+    /* Add a subtle animation effect */
+    animation: spin 5s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Add autism theme decorations to the body */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('autism-pattern.webp');
+    background-size: 50px 50px;
+    opacity: 0.2;
+    z-index: -1;
+    /* Add a subtle animation effect */
+    animation: move 10s linear infinite;
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(50px);
+    }
+  }
+  
+  body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('autism-swirl.jpeg');
+    background-size: 200px 200px;
+    opacity: 0.1;
+    z-index: -1;
+    /* Add a subtle animation effect */
+    animation: rotate 10s linear infinite;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

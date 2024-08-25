@@ -1,0 +1,162 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background-color: transparent;
+  /* border-bottom: 1px solid #ccc; */
+  background-color: black;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: grey;
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 30px;
+  height: 30px;
+}
+
+  .reminder-section h2{
+    text-align: center;
+  }
+
+/* Autism theme colors */
+:root {
+    --autism-blue: #87CEEB;
+    --autism-red: #FFC080;
+    --autism-yellow: #836f22;
+    --autism-green: #32CD32;
+    --background-color: #F0F0F0;
+  }
+  
+  .reminder-section {
+    background-color: var(--background-color);
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #CCCCCC;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .reminder-section h2 {
+    color: var(--autism-blue);
+    font-weight: bold;
+    margin-top: 0;
+  }
+  
+  .reminder-container {
+    margin-top: 20px;
+  }
+  
+  .reminder-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .reminder-item {
+    padding: 20px;
+    border-bottom: 1px solid #CCCCCC;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .reminder-item:hover {
+    background-color: var(--autism-yellow);
+    cursor: pointer;
+  }
+  
+  .reminder-icon {
+    font-size: 24px;
+    color: var(--autism-blue);
+    margin-right: 10px;
+  }
+  
+  .reminder-content {
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  .reminder-content h3 {
+    font-weight: bold;
+    margin-top: 0;
+    color: var(--autism-blue);
+  }
+  
+  .reminder-content p {
+    margin-bottom: 10px;
+  }
+  
+  .reminder-content a {
+    text-decoration: none;
+    color: var(--autism-green);
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 1px solid var(--autism-green);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .reminder-content a:hover {
+    background-color: var(--autism-green);
+    color: #FFFFFF;
+  }
+  
+  .reminder-content a.btn-primary {
+    background-color: var(--autism-blue);
+    color: #FFFFFF;
+    border: 1px solid var(--autism-blue);
+  }
+  
+  .reminder-content a.btn-primary:hover {
+    background-color: var(--autism-red);
+    color: #FFFFFF;
+  }
+  
+  .reminder-content a.btn-secondary {
+    background-color: var(--autism-yellow);
+    color: #FFFFFF;
+    border: 1px solid var(--autism-yellow);
+  }
+  
+  .reminder-content a.btn-secondary:hover {
+    background-color: var(--autism-green);
+    color: #FFFFFF;
+  }

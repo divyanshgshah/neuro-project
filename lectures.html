@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Autism Website</title>
+	<style>
+		body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: transparent;
+    /* border-bottom: 1px solid #ccc; */
+    background-color: black;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  nav a:hover {
+    color: grey;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 30px;
+    height: 30px;
+  }
+
+		/* Add styles for the containers */
+.container {
+  background-color: #ed810693; /* Soft, calming background color */
+  padding: 20px;
+  border: 1px solid #ddd; /* Gentle border */
+  border-radius: 10px; /* Rounded corners for a softer look */
+  width: 200px; /* Set a fixed width for each container */
+  height: 150px; /* Set a fixed height for each container */
+  display: inline-block; /* Make containers inline */
+  margin: 10px; /* Add some margin between containers */
+  text-align: center; /* Center the text horizontally */
+}
+
+.container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333; /* Clear, readable font color */
+  margin-top: 0; /* Remove top margin for h2 */
+  text-decoration: underline;
+}
+
+/* Add some extra styles to make the containers look like rectangles */
+.container {
+  box-shadow: 0 0 10px rgb(255, 191, 0); /* Add a subtle shadow */
+  border-radius: 5px; /* Make the corners slightly rounded */
+  margin-top:42px;
+}
+
+/* Make the containers inline */
+.container {
+  float: left; /* Make containers float left */
+  margin-right: 20px; /* Add some margin between containers */
+  padding: 70px;
+  text-align:start;
+}
+
+.quote img{
+  margin-left: 187px;
+  width: 73vw;
+  height: 52vh;
+  margin-top: 3vmax;;
+}
+
+.container button {
+  margin-top: 25px;
+  margin-left: -3px;
+  
+}
+
+/* CSS */
+.banner-container {
+  width: 800px; /* Set the width of the banner container */
+  height: 200px; /* Set the height of the banner container */
+  margin: 20px auto; /* Add some margin and center the container */
+  overflow: hidden; /* Hide the overflow to create a sliding effect */
+}
+
+.banner {
+  width: 400px; /* Set the width of each banner */
+  height: 200px; /* Set the height of each banner */
+  float: left; /* Make the banners float left */
+  margin: 0 10px; /* Add some margin between banners */
+  padding: 20px; /* Add some padding inside the banners */
+  border-radius: 10px; /* Add some rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add some subtle shadow */
+}
+
+.blue-banner {
+  background-color: #87CEEB;
+  margin-top: 10px; /* Soft blue background color */
+}
+
+.pink-banner {
+  background-color: #FFC5C5; /* Pink background color */
+  text-align: center; /* Center the text horizontally */
+}
+
+.pink-banner h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333; /* Dark gray text color */
+  margin-top: 0; /* Remove top margin for h2 */
+}
+
+.pink-banner p {
+  font-size: 18px;
+  color: #666; /* Medium gray text color */
+  margin-bottom: 20px; /* Add some margin below the paragraph */
+}
+
+
+
+	</style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+			<li><a href="todo.html">To-Do-Lists</a></li>
+			<li><a href="schedules.html">Schedules</a></li>
+			<li><a href="reminder.html">Reminders</a></li>
+			<li><a href="lectures.html">Lectures</a></li>
+		</ul>
+		<div class="logo">
+      <img src="download.png" alt="Logo">
+		</div>
+	</nav>
+  
+  <div class="quote"><img src="quote.jpg" alt="quote"></div>
+	<!-- Add the containers -->
+	<div class="container">
+		<h2>Text</h2>
+		<div class="content" >If you are a reader and interested in knowing more about autism. Congratulations you are at good spot.</div>
+    <button type="button">Learn more!</button>
+  </div>
+	<div class="container">
+		<h2>Video</h2>
+		<div class="content">See videos related to autism , hurry up don't waste time </div>
+    <button type="button">Learn more!</button>
+	</div>
+	<div class="container">
+		<h2>Audio</h2>
+		<div class="content">Listen to latest autism audio files , just for you.</div>
+    <button type="button">Learn more!</button>
+	</div>
+	<div class="container">
+		<h2>Interactive simulation</h2>
+		<div class="content">Interactive simulation content</div>
+    <button type="button">Learn more!</button>
+	</div>
+
+  <!-- HTML -->
+<div class="banner-container">
+  <div class="banner blue-banner">
+    <!-- No content needed for a plain blue banner -->
+  </div>
+  <div class="banner pink-banner">
+    <h2>Pink Banner with Text</h2>
+    <p>This is a pink banner with some text.</p>
+  </div>
+</div>
+
+	<script>
+		// Add JavaScript code to handle the click event
+const containers = document.querySelectorAll('.container');
+
+containers.forEach((container, index) => {
+  container.addEventListener('click', () => {
+    // Define the URLs for each container
+    const urls = [
+      'text_page.html', // Text container
+      'video_page.html', // Video container
+      'audio_page.html', // Audio container
+      'simulation_page.html' // Interactive simulation container
+    ];
+
+    // Navigate to the corresponding URL
+    window.location.href = urls[index];
+  });
+});
+// JavaScript (optional)
+// If you want to add some interactivity to the banner, you can use JavaScript to pause the animation on hover
+const banner = document.querySelector('.banner');
+
+banner.addEventListener('mouseover', () => {
+  banner.style.animationPlayState = 'paused';
+});
+
+banner.addEventListener('mouseout', () => {
+  banner.style.animationPlayState = 'running';
+});
+	</script>
+</body>
+</html>
